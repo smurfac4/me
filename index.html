@@ -20,21 +20,20 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 20px;
+            padding: 40px 20px;
         }
 
         .container {
             width: 100%;
-            max-width: 450px;
+            max-width: 500px;
             text-align: center;
-            padding: 40px 20px;
+            padding: 40px 25px;
             background: rgba(255, 255, 255, 0.02);
             border-radius: 24px;
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
             backdrop-filter: blur(12px);
             border: 1px solid rgba(255, 255, 255, 0.05);
         }
-
 
         .avatar {
             width: 96px;
@@ -55,23 +54,80 @@
         h1 {
             font-size: 26px;
             font-weight: 700;
-            margin-bottom: 6px;
+            margin-bottom: 4px;
             letter-spacing: -0.5px;
         }
 
         .subtitle {
             font-size: 14px;
-            color: #94a3b8;
-            margin-bottom: 32px;
+            color: #38bdf8;
+            font-weight: 500;
+            margin-bottom: 24px;
         }
 
+        /* --- ABOUT ME SECTION --- */
+        .about-section {
+            text-align: left;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 16px;
+            padding: 20px;
+            margin-bottom: 32px;
+            border: 1px solid rgba(255, 255, 255, 0.02);
+        }
+
+        .about-section p {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #cbd5e1;
+            margin-bottom: 16px;
+        }
+
+        .info-title {
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #94a3b8;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .info-block {
+            margin-bottom: 14px;
+        }
+        
+        .info-block:last-child {
+            margin-bottom: 0;
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+
+        .tag {
+            font-size: 12px;
+            background: rgba(56, 189, 248, 0.1);
+            color: #38bdf8;
+            padding: 4px 10px;
+            border-radius: 8px;
+            font-weight: 500;
+        }
+
+        .edu-text, .comp-text {
+            font-size: 13px;
+            color: #e2e8f0;
+        }
+        /* ------------------------ */
 
         .links-wrapper {
             display: flex;
             flex-direction: column;
             gap: 14px;
         }
-
 
         .link-card {
             display: flex;
@@ -88,7 +144,6 @@
             border: 1px solid rgba(255, 255, 255, 0.03);
         }
 
-
         .link-card i {
             font-size: 20px;
             width: 32px;
@@ -98,7 +153,6 @@
             justify-content: center;
         }
 
-
         .link-card:hover {
             background: #ffffff;
             color: #0f172a;
@@ -106,7 +160,6 @@
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
             font-weight: 600;
         }
-
 
         .footer {
             margin-top: 40px;
@@ -123,9 +176,38 @@
             <img src="avatar.jpg" alt="Avans">
         </div>
 
-        <h1>smurfac4</h1>
-        <p class="subtitle">Connect with me across platforms</p>
+        <h1>Aleksandr Vanslov</h1>
+        <p class="subtitle">Software Developer</p>
 
+        <div class="about-section">
+            <p>
+                Software Developer and IT student at VILNIUS TECH, specialized in full-stack development, automated data extraction, and bot architectures. Focused on building highly efficient, practical solutions.
+            </p>
+
+            <div class="info-block">
+                <div class="info-title"><i class="fas fa-graduation-cap"></i> Education</div>
+                <div class="edu-text" style="margin-bottom: 4px;">Bachelor of Information Technology, VILNIUS TECH (2023 - 2027)</div>
+                <div class="edu-text" style="color: #94a3b8; font-size: 12px;">Gymnasium №56, Saint Petersburg (2012-2022)</div>
+            </div>
+
+            <div class="info-block">
+                <div class="info-title"><i class="fas fa-code"></i> Main Skills</div>
+                <div class="tags">
+                    <span class="tag">Java</span>
+                    <span class="tag">Spring Boot</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">Ruby on Rails</span>
+                    <span class="tag">React</span>
+                    <span class="tag">C / C++</span>
+                    <span class="tag">SQL / SQLite</span>
+                </div>
+            </div>
+
+            <div class="info-block">
+                <div class="info-title"><i class="fas fa-trophy"></i> Competitive Programming</div>
+                <div class="comp-text">Participant in ICPC and OCPC algorithmic competitions.</div>
+            </div>
+        </div>
         <div class="links-wrapper">
             
             <a href="https://github.com/smurfac4" class="link-card" target="_blank">
